@@ -1,12 +1,24 @@
 body {
-  background-color: #2f343a;
+  background-color: #33383f;
   color: white;
   max-width: 99vw;
+  font-size: 1.3rem;
 }
 
 a {
   text-decoration: none;
   color: white;
+  padding: 0 1.5rem;
+}
+
+a:hover {
+  color: rgb(214, 98, 3);
+}
+
+i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 0.4rem;
 }
 
 #header .row {
@@ -17,10 +29,15 @@ a {
 #header {
   padding: 0.8rem 0;
   width: 100vw;
+  border-radius: 0 0 18px 18px;
 }
 
 #about {
   margin-right: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
 }
 
 #center {
@@ -30,29 +47,28 @@ a {
 }
 
 #center h1 {
-    animation-name: blink;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation-name: glowName;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #center img {
-  border-radius: 20px;
+  border-radius: 55px;
   max-width: 300px;
   margin-bottom: 1rem;
+
+  animation-name: glowBorder;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #footer {
-  font-size: 1.2rem;
   background-color: #212529;
   padding: 0.8rem 0;
+  border-radius: 18px 18px 0 0;
 }
-
-#footer i {
-  margin-right: 1rem;
-  margin-left: 0.2rem;
-}
-
 @media (max-height: 555px) {
   #center img {
     max-width: 50vh;
@@ -75,11 +91,20 @@ a {
   }
 }
 
-@keyframes blink {
+@keyframes glowName {
   from {
     opacity: 100%;
   }
   to {
     opacity: 40%;
+  }
+}
+
+@keyframes glowBorder {
+  from {
+    box-shadow: rgba(214, 98, 3, 0.3) 0px 0px 0px 4px;
+  }
+  to {
+    box-shadow: none;
   }
 }
