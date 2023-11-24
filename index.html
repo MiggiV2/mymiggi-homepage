@@ -28,25 +28,45 @@
     <nav id="header" class="navbar-dark bg-dark justify-content-center">
       <div class="row justify-content-center">
         <div class="col-auto">
-          <a class="navbar-brand" href="#">MyMiggi.de</a>
+          <a onclick="showHome()" class="navbar-brand" href="#">MyMiggi.de</a>
         </div>
         <div class="spacer col"></div>
         <div class="col-auto">
-          <a id="about" href="#about"
+          <a onclick="showAbout()" id="about" href="#about"
             >About <i class="bi bi-info-circle"></i
           ></a>
-          <a href="#contact"> Contact <i class="bi bi-chat"></i></a>
+          <a onclick="showContact()" href="#contact"> Contact <i class="bi bi-chat"></i></a>
         </div>
       </div>
     </nav>
-    <!--Center-->
-    <div id="center" class="row">
+    <!--Home-->
+    <div id="center-home" class="row">
       <div class="col"></div>
       <div class="col-auto">
         <img src="assets/me.png" alt="Michael-Hainz" />
         <h1>Michael Hainz</h1>
       </div>
       <div class="col"></div>
+    </div>
+    <!--About-->
+    <div id="center-about" class="container">
+      <p>
+        Welcome to my website! My name is Michael Hainz and I am passionate
+        about computer science and gaming. For many years I have been
+        enthusiastically following the latest developments in the world of
+        technology and have realized my passion in various projects and
+        experiences.
+      </p>
+      <p>On this website I share my experiences, projects and insights.</p>
+    </div>
+    <!--Contact-->
+    <div id="center-contact" class="container ">
+      <p>
+        You can reach me via matrix! ->
+        <a href="https://matrix.to/#/@michi:matrix.familyhainz.de">
+          <i class="bi bi-chat-dots"></i> @michi:matrix.familyhainz.de
+        </a>
+      </p>
     </div>
     <!--Footer-->
     <nav id="footer" class="navbar fixed-bottom bg-body-black">
@@ -71,5 +91,6 @@
         </a>
       </div>
     </nav>
+    <script src="js/content-selector.js"></script>
   </body>
 </html>
