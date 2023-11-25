@@ -21,7 +21,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <!--CustomCSS-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
   </head>
   <body>
     <!--Header-->
@@ -33,10 +35,10 @@
         <div class="spacer col"></div>
         <div class="col-auto">
           <a onclick="showAbout()" id="about-link" href="#about"
-            >About <i class="bi bi-info-circle"></i
+            >About <i class="bi bi-info-circle desktop"></i
           ></a>
           <a onclick="showContact()" href="#contact">
-            Contact <i class="bi bi-chat"></i
+            Contact <i class="bi bi-chat desktop"></i
           ></a>
         </div>
       </div>
@@ -97,22 +99,22 @@
     <nav id="footer" class="navbar fixed-bottom bg-body-black">
       <div class="container justify-content-center">
         <a href="http://social.mymiggi.de/@miggi">
-          Mastodon <i class="bi bi-mastodon"></i
-        ></a>
+          <span class="desktop">Mastodon</span> <i class="bi bi-mastodon"></i>
+        </a>
         <a href="https://www.instagram.com/onlym1ch1">
-          Instagram <i class="bi bi-instagram"></i>
+          <span class="desktop">Instagram</span> <i class="bi bi-instagram"></i>
         </a>
         <a href="https://matrix.to/#/@michi:matrix.familyhainz.de">
-          Matrix <i class="bi bi-chat-dots"></i>
+          <span class="desktop">Matrix</span> <i class="bi bi-chat-dots"></i>
         </a>
         <a href="https://discord.com/users/1057755870215274506">
-          Discord <i class="bi bi-discord"></i>
+          <span class="desktop">Discord</span> <i class="bi bi-discord"></i>
         </a>
         <a href="http://gitea.familyhainz.de/miggi">
-          Forgejo <i class="bi bi-git"></i>
+          <span class="desktop">Forgejo</span> <i class="bi bi-git"></i>
         </a>
         <a href="http://github.com/Miggiv2">
-          Github <i class="bi bi-github"></i>
+          <span class="desktop">Github</span> <i class="bi bi-github"></i>
         </a>
       </div>
     </nav>

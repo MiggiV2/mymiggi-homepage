@@ -1,0 +1,18 @@
+@keyframes glowName {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 40%;
+    }
+  }
+  
+  @keyframes glowBorder {
+    from {
+      box-shadow: rgba(214, 98, 3, 0.3) 0px 0px 0px 4px;
+    }
+    to {
+      box-shadow: none;
+    }
+  }
+  
