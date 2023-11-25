@@ -9,35 +9,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyMiggi - Homepage</title>
-    <!--Bootstrap5-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
     <!--CustomCSS-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+    <link rel="stylesheet" href="src/css/animations.css" />
   </head>
   <body>
     <!--Header-->
     <nav id="header" class="navbar-dark bg-dark justify-content-center">
       <div class="row justify-content-center">
         <div class="col-auto">
-          <a onclick="showHome()" class="navbar-brand" href="#">MyMiggi.de</a>
+          <a id="home-link" class="navbar-brand" href="#">MyMiggi.de</a>
         </div>
         <div class="spacer col"></div>
         <div class="col-auto">
-          <a onclick="showAbout()" id="about-link" href="#about"
+          <a id="about-link" href="#about"
             >About <i class="bi bi-info-circle desktop"></i
           ></a>
-          <a onclick="showContact()" href="#contact">
+          <a id="contact-link" href="#contact">
             Contact <i class="bi bi-chat desktop"></i
           ></a>
         </div>
@@ -47,7 +38,7 @@
     <div id="center-home" class="row">
       <div class="col"></div>
       <div class="col-auto">
-        <img src="assets/me.png" alt="Michael-Hainz" />
+        <img src="assets/me.avif" alt="Michael-Hainz" width="300px" height="300px" />
         <h1>Michael Hainz</h1>
       </div>
       <div class="col"></div>
@@ -61,7 +52,7 @@
         realized my passion in various projects and experiences.
       </p>
       <img
-        src="assets/laptop-2838921_1920.jpg"
+        src="assets/laptop-2838921_1920.avif"
         alt="Image from https://pixabay.com/photos/laptop-mockup-graphics-tablet-2838921"
       />
       <p>
@@ -91,7 +82,7 @@
         connect and chat about tech, gaming, or any cool projects!
       </p>
       <img
-        src="assets/iphone-410324_1920.jpg"
+        src="/assets/iphone-410324_1920.avif"
         alt="Image from https://pixabay.com/photos/iphone-smartphone-apps-apple-inc-410324/"
       />
     </div>
@@ -118,6 +109,6 @@
         </a>
       </div>
     </nav>
-    <script src="js/content-selector.js"></script>
+    <script type="module" src="src/js/main.js"></script>
   </body>
 </html>
