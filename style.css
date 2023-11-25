@@ -8,7 +8,6 @@ body {
 a {
   text-decoration: none;
   color: white;
-  padding: 0 2.4rem;
 }
 
 a:hover {
@@ -31,7 +30,12 @@ i {
   border-radius: 0 0 18px 18px;
 }
 
-#about {
+#header a,
+#footer a {
+  padding: 0 2.4rem;
+}
+
+#about-link {
   margin-right: 1rem;
 }
 
@@ -63,14 +67,25 @@ i {
   animation-direction: alternate;
 }
 
-#center-about {
-  display: none;
-}
-
+#center-about,
 #center-contact {
   display: none;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  max-width: 50rem;
+  text-align: justify;
 }
 
+#center-about img,
+#center-contact img {
+  max-width: 100%;
+  margin: 2.5rem 0;
+  border-radius: 40px;
+}
+
+#center-contact a {
+  text-decoration: underline;
+}
 
 #footer {
   background-color: #212529;
