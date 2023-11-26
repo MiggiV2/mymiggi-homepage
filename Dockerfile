@@ -1,9 +1,7 @@
 FROM node:lts-slim as build-stage
 WORKDIR /app
-COPY package.json yarn.lock .
-RUN yarn 
-COPY index.html .
-COPY public public
+COPY package.json yarn.lock vite.config.js .
+RUN yarn
 COPY src src
 RUN yarn run build
 
