@@ -1,21 +1,37 @@
 @import "bootstrap/dist/css/bootstrap.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+:root {
+  --background-color-primary: white;
+  --background-color-secondary: rgb(201, 90, 0);
+  --text-color-primary: black;
+  --text-color-secondary: white;
+  --accent-color: rgb(214, 98, 3);
+  --mode: "light";
+}
+
+:root.dark {
+  --background-color-primary: #33383f;
+  --background-color-secondary: #212529;
+  --text-color-primary: white;
+  --accent-color: rgb(214, 98, 3);
+  --mode: "dark";
+}
+
 body {
-  background-color: #33383f;
-  color: white;
-  max-width: 99vw;
+  background-color: var(--background-color-primary);
+  color: var(--text-color-primary);
   font-size: 1.3rem;
   overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color-primary);
 }
 
 a:hover {
-  color: rgb(214, 98, 3);
+  text-decoration: underline;
 }
 
 i {
@@ -25,18 +41,20 @@ i {
 
 #header {
   padding: 0.8rem 0;
-  width: 100vw;
   border-radius: 0 0 18px 18px;
+  background-color: var(--background-color-secondary);
+  color: var(--text-color-secondary);
+  width: 100vw;
 }
 
 #header .row {
-  margin: auto;
-  max-width: 60vw;
+  width: 60vw;
 }
 
 #header a,
 #footer a {
   padding: 0 2.4rem;
+  color: var(--text-color-secondary);
 }
 
 #about-link {
@@ -45,10 +63,16 @@ i {
 
 .navbar-brand {
   font-size: 1.6rem;
+  color: var(--text-color-secondary);
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--text-color-secondary);
 }
 
 #center-home {
-  color: white;
+  color: var(--text-color-primary);
   text-align: center;
   margin: 0;
   position: absolute;
@@ -97,7 +121,7 @@ i {
 }
 
 #footer {
-  background-color: #212529;
+  background-color: var(--background-color-secondary);
   padding: 0.8rem 0;
   border-radius: 18px 18px 0 0;
 }

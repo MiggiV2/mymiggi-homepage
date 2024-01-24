@@ -9,7 +9,7 @@
   
   @keyframes glowBorder {
     from {
-      box-shadow: rgba(214, 98, 3, 0.3) 0px 0px 0px 4px;
+      box-shadow: rgba(214, 98, 3) 5px 5px 25px 10px;
     }
     to {
       box-shadow: none;
