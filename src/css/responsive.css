@@ -16,23 +16,23 @@
     padding: 0 1rem;
   }
   #header .row {
-    max-width: 65vw;
+    width: 90vw;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  .spacer {
-    display: none;
-  }
-  #header .row {
-    max-width: 100vw;
-  }
   .desktop {
     display: none;
+  }
+  .mobile {
+    display: unset;
   }
   #header a,
   #footer a {
     padding: 0 2rem;
+  }
+  #header .row {
+    max-width: 100vw;
   }
   i {
     font-size: 1.8rem;

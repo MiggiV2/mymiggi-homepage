@@ -41,10 +41,10 @@ i {
 
 #header {
   padding: 0.8rem 0;
-  border-radius: 0 0 18px 18px;
   background-color: var(--background-color-secondary);
   color: var(--text-color-secondary);
   width: 100vw;
+  user-select: none;
 }
 
 #header .row {
@@ -57,8 +57,8 @@ i {
   color: var(--text-color-secondary);
 }
 
-#about-link {
-  margin-right: 1rem;
+.mobile {
+  display: none;
 }
 
 .navbar-brand {
@@ -103,7 +103,6 @@ i {
 #center-about,
 #center-contact {
   display: none;
-  margin-top: 4rem;
   margin-bottom: 10rem;
   max-width: 50rem;
   text-align: justify;
@@ -113,7 +112,11 @@ i {
 #center-contact img {
   max-width: 100%;
   margin: 2.5rem 0;
-  border-radius: 40px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 11px -1px rgba(0,0,0,0.75);
+  user-select: none;
 }
 
 #center-contact a {
@@ -124,4 +127,24 @@ i {
   background-color: var(--background-color-secondary);
   padding: 0.8rem 0;
   border-radius: 18px 18px 0 0;
+  user-select: none;
+}
+
+.card-body {
+  color: var(--text-color-secondary);
+}
+
+.card {
+  background-color: var(--background-color-secondary);
+  border: unset;
+}
+
+.list-group-item {
+  color: var(--text-color-secondary);
+  background-color: var(--background-color-secondary);
+}
+
+#collapseExample {
+  text-align: end;
+  width: 100vw;
 }

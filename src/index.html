@@ -16,18 +16,39 @@
   </head>
   <body>
     <!--Header-->
-    <nav id="header" class="navbar justify-content-center">
+    <nav id="header" class="navbar justify-content-center fixed-top">
       <div class="row align-items-center">
         <div class="col-auto">
           <a id="home-link" class="navbar-brand" href="#">MyMiggi.de</a>
         </div>
-        <div class="spacer col"></div>
-        <div class="col-auto">
-          <a id="about-link" href="#about">About </a>
-          <a id="contact-link" href="#contact"> Contact</a>
+        <div class="col"></div>
+        <div class="col-auto desktop">
+          <a id="about-link" href="#about">About</a>
+          <a id="contact-link" href="#contact">Contact</a>
+        </div>
+        <i
+          class="col-auto bi bi-list mobile"
+          data-bs-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+        </i>
+      </div>
+        <div class="collapse mobile" id="collapseExample">
+          <div class="card card-body">
+            <p>
+              <a id="about-link-2" href="#about">About</a>
+            </p>
+            <p>
+              <a id="contact-link-2" href="#contact">Contact</a>
+            </p>
+          </div>
         </div>
       </div>
     </nav>
+    <div class="p-4"></div>
     <!--Home-->
     <div id="center-home" class="row">
       <div class="col"></div>
@@ -43,7 +64,7 @@
       <div class="col"></div>
     </div>
     <!--About-->
-    <div id="center-about" class="container">
+    <div id="center-about" class="container mt-5">
       <p>
         Welcome to my site! My name is Michael Hainz and I am passionate about
         computer science and gaming. For many years I have been enthusiastically
@@ -71,7 +92,7 @@
       <p>On this website, I share links to my online accounts.</p>
     </div>
     <!--Contact-->
-    <div id="center-contact" class="container">
+    <div id="center-contact" class="container mt-5">
       <p>
         Feel free to reach out to me on
         <a href="https://matrix.to/#/@michi:matrix.familyhainz.de"> Matrix </a>
