@@ -3,10 +3,10 @@
 
 :root {
   --background-color-primary: white;
-  --background-color-secondary: rgb(201, 90, 0);
+  --background-color-secondary: #335868;
   --text-color-primary: black;
   --text-color-secondary: white;
-  --accent-color: rgb(214, 98, 3);
+  --accent-color: #335868;
   --mode: "light";
 }
 
