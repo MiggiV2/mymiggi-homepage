@@ -53,8 +53,15 @@ i {
 
 #header a,
 #footer a {
-  padding: 0 2.4rem;
   color: var(--text-color-secondary);
+}
+
+#header a {
+  padding: 0 1rem;
+}
+
+#footer a {
+  padding: 0 2.4rem;
 }
 
 .mobile {
