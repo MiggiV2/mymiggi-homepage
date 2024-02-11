@@ -8,11 +8,16 @@ node {
     stage('Build homepage') {
       sh "docker build . -t $ROOT_IMAGE"
     }
-    stage ('Manage tags & remove untagged') {
+    stage('Manage tags & remove untagged') {
       sh "docker tag $ROOT_IMAGE $ROOT_IMAGE:build-$BUILD_ID"
       sh 'docker image prune -f'
       sh "docker push $ROOT_IMAGE"
       sh "docker push $ROOT_IMAGE:build-$BUILD_ID"
-    }
+    }    
+  }
+  withCredentials([string(credentialsId: 'webhook-homepage', variable: 'WEBHOOK')]) {
+    sh '''
+      curl -v -X POST $WEBHOOK
+    '''
   }
 }
