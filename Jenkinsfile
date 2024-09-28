@@ -1,6 +1,6 @@
 node {
-  git branch: 'main', url: 'https://gitea.familyhainz.de/Miggi/mymiggi-homepage.git'
-  withEnv(['ROOT_IMAGE=gitea.familyhainz.de/miggi/homepage']) {
+  git branch: 'main', url: 'https://code.mymiggi.de/Miggi/mymiggi-homepage.git'
+  withEnv(['ROOT_IMAGE=code.mymiggi.de/miggi/homepage']) {
     stage('Pulling base images') {
       sh "docker pull nginx:alpine-slim"
       sh "docker pull node:lts-slim"
